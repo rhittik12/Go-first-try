@@ -19,8 +19,8 @@ func main() {
 		log.Fatal(err)
 	}
 
-	for _, greeting := range message {
-		fmt.Println(greeting)
+	for name, greeting := range message {
+		fmt.Println(name, ":", greeting)
 	}
 
 	//for name, greeting := range message {
